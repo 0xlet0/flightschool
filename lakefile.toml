@@ -1,0 +1,11 @@
+name = "flightschool"
+version = "0.1.0"
+defaultTargets = ["Flightschool", "flightschool"]
+
+[[lean_lib]]
+name = "Flightschool"
+globs = ["Flightschool", "Flightschool.+", "exercises.+", "solutions.+", "projects.+", "scripts.+"]
+
+[[lean_exe]]
+name = "flightschool"
+root = "Main"
