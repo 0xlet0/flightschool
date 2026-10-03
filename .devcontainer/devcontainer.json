@@ -1,0 +1,8 @@
+{
+  "name": "flightschool",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [8081, 19006],
+  "remoteUser": "node"
+}
