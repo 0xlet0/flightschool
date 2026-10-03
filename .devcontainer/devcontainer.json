@@ -3,6 +3,20 @@
   "dockerComposeFile": "../compose.yaml",
   "service": "dev",
   "workspaceFolder": "/workspace",
-  "forwardPorts": [8081, 19006],
-  "remoteUser": "node"
+  "forwardPorts": [
+    8081,
+    19006
+  ],
+  "remoteUser": "node",
+  "remoteEnv": {
+    "ELAN_HOME": "/workspace/.elan",
+    "PATH": "/workspace/.elan/bin:${containerEnv:PATH}"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "leanprover.lean4"
+      ]
+    }
+  }
 }
